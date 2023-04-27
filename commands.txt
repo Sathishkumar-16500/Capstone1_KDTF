@@ -1,0 +1,3 @@
+pytest -v -s --capture=sys --html=D:\Sathish\guvi\Capstone_project_2\Reports\Orange_hrm_add_employee.html test_orange_hrm.py
+
+pytest -v -s --capture=sys --html=D:\Sathish\guvi\Capstone_project_2\Reports\Orange_hrm_employee_job_termination.html test_orange_hrm.py

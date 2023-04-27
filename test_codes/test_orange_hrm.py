@@ -11,9 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 
-yaml_file = "D:\Capstone1_KDTF\config.yaml"
-data_file='D:\Capstone1_KDTF\data_config.yaml'
-locators_file='D:\Capstone1_KDTF\locators_config.yaml'
+yaml_file = "D:\\Capstone1_KDTF\\config.yaml"
+data_file='D:\\Capstone1_KDTF\\data_config.yaml'
+locators_file='D:\\Capstone1_KDTF\\locators_config.yaml'
 
 orange_data = orange_yaml(yaml_file).yaml_reader()
 data = orange_yaml(data_file).yaml_reader()
@@ -202,21 +202,21 @@ class Test_orange_hrm:
             assert False
 
     def test_user_management_dropdown_validation(self,booting_function,login):
-        self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().admin_tab))).click()
+        self.wait.until(EC.presence_of_element_located((By.XPATH, locators['admin_tab']))).click()
         # --------verifying menu options are present
-        menu_options_flag = self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().menu_options)))
-        self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().user_management_dropdown))).click()
+        # menu_options_flag = self.wait.until(EC.presence_of_element_located((locators['menu_options'])))
+        self.wait.until(EC.presence_of_element_located((By.XPATH, locators['user_management_dropdown']))).click()
         time.sleep(2)
-        self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().users_option))).click()
+        self.wait.until(EC.presence_of_element_located((By.XPATH, locators['users_option']))).click()
         user_role_flag=None
         status_flag=None
         try:
-            user_role=self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().user_role_dropdown)))
+            user_role=self.wait.until(EC.presence_of_element_located((By.XPATH, locators['user_role_dropdown'])))
             time.sleep(2)
             self.action.click(user_role).perform()
             time.sleep(2)
-            drop_down_options = user_role.find_elements(by=By.XPATH, value=locators.Orange_hrm_Locators().user_role_dropdown)
-            self.driver.find_element(by=By.XPATH,value="//div[@role='listbox']//span[text()='ESS']").click()
+            drop_down_options = user_role.find_elements(by=By.XPATH, value=locators['user_role_dropdown'])
+            # self.driver.find_element(by=By.XPATH,value="//div[@role='listbox']//span[text()='ESS']").click()
             time.sleep(3)
             options=[]
             for option in drop_down_options:
@@ -224,7 +224,7 @@ class Test_orange_hrm:
             options=options[1].split("\n")
             options.pop(0)
             print(options)
-            if options==data.Orange_hrm_Data().user_role_expected_options:
+            if options==data['user_role_expected_options']:
                 user_role_flag=True
                 print('#------user_role_dropdown options has been validated------#\n')
             else:
@@ -234,18 +234,18 @@ class Test_orange_hrm:
             print('Cannot able to click the user_role dropdown\n',e)
 
         try:
-            status=self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().status_dropdown)))
+            status=self.wait.until(EC.presence_of_element_located((By.XPATH, locators['status_dropdown'])))
             time.sleep(2)
             self.action.click(status).perform()
             time.sleep(2)
-            drop_down_options = status.find_elements(by=By.XPATH, value=locators.Orange_hrm_Locators().status_dropdown)
+            drop_down_options = status.find_elements(by=By.XPATH, value=locators['status_dropdown'])
             options=[]
             for option in drop_down_options:
                 options.append(option.get_attribute("innerText"))
             options=options[1].split("\n")
             options.pop(0)
             print(options)
-            if options==data.Orange_hrm_Data().status_expected_options:
+            if options==data['status_expected_options']:
                 status_flag=True
                 print('#------status_dropdown options has been validated------#\n')
             else:
@@ -255,7 +255,7 @@ class Test_orange_hrm:
             print('Cannot able to click the status_dropdown\n')
 
         #--------combining all the result to validate the testcase--------#
-        result = [menu_options_flag, user_role_flag, status_flag]
+        result = [user_role_flag, status_flag]
 
         if all(result):
             print("#-----Test_case_passed-----#\n")
@@ -264,6 +264,44 @@ class Test_orange_hrm:
             print("#-----Test_case_failed-----#\n")
             assert False
 
+    def test_new_employee_creation(self,booting_function,login):
+        # menu_options_flag = self.wait.until(EC.presence_of_element_located((By.XPATH, locators.Orange_hrm_Locators().menu_options)))
+        employee_list_flag=None
+        try:
+            self.wait.until(EC.presence_of_element_located((By.XPATH,locators['pim_xpath']))).click()
+            self.wait.until(EC.presence_of_element_located((By.XPATH,locators['add_button']))).click()
+            self.wait.until(EC.presence_of_element_located((By.XPATH,locators['firstname_textbox']))).send_keys(data['test_first_name'])
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['middlename_textbox']))).send_keys(data['test_middle_name'])
+            time.sleep(2)
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['lastname_textbox']))).send_keys(data['test_last_name'])
+            time.sleep(2)
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['employee_id_textbox']))).send_keys(data['test_employee_id'])
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_details_toggle']))).click()
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_status_radio']))).click()
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_username_textbox']))).send_keys(data['test_login_username'])
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_password_textbox']))).send_keys(data['test_login_password'])
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_password_confirm_textbox']))).send_keys(data['test_login_password'])
+            self.wait.until(EC.presence_of_element_located((By.XPATH, locators['login_save_button']))).click()
+            employee_list_flag=self.wait.until(EC.presence_of_element_located((By.XPATH,locators['personal_details_heading'])))
+        except Exception as e:
+            print('Cannot be able to Access employee list page, error occurred:',e)
+        #--------combining all the result to validate the testcase--------#
+        result = [employee_list_flag]
+        #
+        if all(result):
+            print(
+                "success: new user created using firstname {a},middlename {b},lastname {c}, employee_id {d}".format(
+                    a=orange_data['test_first_name'], b=orange_data['test_middle_name'],
+                    c=orange_data['test_last_name'], d=orange_data['test_employee_id']))
+            print("#-----Test_case_passed-----#\n")
+            assert True
+        else:
+            print(
+                "failure: new user cannot be created using firstname {a},middlename {b},lastname {c}, employee_id {d}".format(
+                    a=orange_data['test_first_name'], b=orange_data['test_middle_name'],
+                    c=orange_data['test_last_name'], d=orange_data['test_employee_id']))
+            print("#-----Test_case_failed-----#\n")
+            assert False
 
 
 

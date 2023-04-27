@@ -69,6 +69,18 @@ tabs_xpath : ["//span[text()='Admin']",
                "//span[text()='Maintenance']",
                "//span[text()='Buzz']"]
 
+tab_xpath : {"admin":"//span[text()='Admin']",
+               "PIM":"/span[text()='PIM']",
+               "Leave":"/span[text()='Leave']",
+               "Time":"/span[text()='Time']",
+               "Recruitment":"/span[text()='Recruitment']",
+               "My Info":"/span[text()='My Info']",
+               "Performance":"/span[text()='Performance']",
+               "Dashboard":"/span[text()='Dashboard']",
+               "Directory":"/span[text()='Directory']",
+               "Maintenance":"/span[text()='Maintenance']",
+               "Buzz":"/span[text()='Buzz']"}
+
 
 
 login_details_toggle : '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[2]/div/label'

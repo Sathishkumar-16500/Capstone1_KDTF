@@ -155,3 +155,88 @@ JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 1681290163625	Marionette	INFO	Stopped listening on port 52939
 Dynamically enable window occlusion 1
+1682340828965	geckodriver	INFO	Listening on 127.0.0.1:61668
+1682340832027	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61669" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilecx6bRl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682340832927	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682340832932	Marionette	INFO	Listening on port 61676
+Read port: 61676
+WebDriver BiDi listening on ws://127.0.0.1:61669
+1682340833060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilecx6bRl\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:61669/devtools/browser/92bfd95a-840e-4528-9092-1fb412b7403f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1682340850623	Marionette	INFO	Stopped listening on port 61676
+Dynamically enable window occlusion 1
+1682340873271	geckodriver	INFO	Listening on 127.0.0.1:61736
+1682340876315	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61737" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilewcYzIO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682340876575	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682340876578	Marionette	INFO	Listening on port 61744
+WebDriver BiDi listening on ws://127.0.0.1:61737
+Read port: 61744
+1682340876712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilewcYzIO\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:61737/devtools/browser/f7d8baf8-fc4c-4f58-8089-36a7931fb964
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1682340900916	Marionette	INFO	Stopped listening on port 61744
+Dynamically enable window occlusion 1
+1682341028048	geckodriver	INFO	Listening on 127.0.0.1:61936
+1682341031091	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61937" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofileitmRRi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682341031341	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682341031345	Marionette	INFO	Listening on port 61945
+Read port: 61945
+WebDriver BiDi listening on ws://127.0.0.1:61937
+1682341031486	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofileitmRRi\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:61937/devtools/browser/bba37c3c-3504-46fe-a117-daf83f270e86
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1682341075153	Marionette	INFO	Stopped listening on port 61945
+Dynamically enable window occlusion 1
+1682341458680	geckodriver	INFO	Listening on 127.0.0.1:62454
+1682341461724	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62455" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilek5nT1F"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682341461984	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682341461988	Marionette	INFO	Listening on port 62468
+Read port: 62468
+WebDriver BiDi listening on ws://127.0.0.1:62455
+1682341462118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofilek5nT1F\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:62455/devtools/browser/ad006fda-0696-486c-8857-db5db5327906
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1682341502174	Marionette	INFO	Stopped listening on port 62468
+Dynamically enable window occlusion 1
+1682341561267	geckodriver	INFO	Listening on 127.0.0.1:62625
+1682341564307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62626" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofile6UNShs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682341564560	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682341564564	Marionette	INFO	Listening on port 62637
+Read port: 62637
+WebDriver BiDi listening on ws://127.0.0.1:62626
+1682341564690	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JIIN12~1\\AppData\\Local\\Temp\\rust_mozprofile6UNShs\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:62626/devtools/browser/1ee7d2bf-53ca-4cb9-bd3b-7ca68091a20a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1682341608865	Marionette	INFO	Stopped listening on port 62637
+Dynamically enable window occlusion 1
